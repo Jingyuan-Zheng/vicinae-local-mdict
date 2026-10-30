@@ -1,0 +1,16 @@
+node_modules/
+.venv/
+dist/
+*.log
+__pycache__/
+*.py[cod]
+.build-bin/
+.DS_Store
+*.mdx
+*.mdd
+*.db
+*.db-*
+*.cache
+.env
+.env.*
+!.env.example

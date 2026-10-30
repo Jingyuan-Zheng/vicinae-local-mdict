@@ -1,0 +1,77 @@
+{
+  "$schema": "https://raw.githubusercontent.com/vicinaehq/vicinae/refs/heads/main/extra/schemas/extension.json",
+  "name": "local-mdict-dictionary",
+  "title": "Local MDict Dictionary",
+  "description": "Search local MDX dictionaries and MDD resources directly inside Vicinae",
+  "categories": ["Productivity", "Other"],
+  "license": "MIT",
+  "platforms": ["Linux"],
+  "author": "local",
+  "contributors": [],
+  "pastContributors": [],
+  "icon": "dictionary.svg",
+  "commands": [
+    {
+      "name": "dictionary",
+      "title": "Dictionary",
+      "subtitle": "Local MDX / MDD",
+      "description": "Search all enabled local MDict dictionaries",
+      "mode": "view"
+    },
+    {
+      "name": "configure-dictionaries",
+      "title": "Configure Dictionaries",
+      "subtitle": "Enable and reorder discovered MDX files",
+      "description": "Choose enabled dictionaries and their lookup order from files in the dictionary folder",
+      "mode": "view"
+    },
+    {
+      "name": "lookup-selected-text",
+      "title": "Lookup Selected Text",
+      "subtitle": "Open the dictionary for the current selection",
+      "description": "Read the current desktop text selection and look it up in Dictionary",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "dictionaryFolder",
+      "title": "Dictionary Folder",
+      "description": "Folder scanned recursively for MDX files and matching MDD resources",
+      "type": "directory",
+      "required": true,
+      "default": "~/Documents/Dictionaries"
+    },
+    {
+      "name": "maxSuggestions",
+      "title": "Max Suggestions",
+      "description": "Maximum number of words shown in each dictionary section",
+      "type": "textfield",
+      "required": false,
+      "default": "30"
+    },
+    {
+      "name": "fuzzySearch",
+      "title": "Fuzzy Search",
+      "label": "Include spelling-near matches",
+      "description": "Include spelling-near matches when prefix results are insufficient",
+      "type": "checkbox",
+      "required": false,
+      "default": true
+    }
+  ],
+  "scripts": {
+    "build": "vici build",
+    "dev": "vici develop",
+    "lint": "vici lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@vicinae/api": "^0.22.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "@types/react": "19.1.17",
+    "typescript": "^5.9.2"
+  }
+}
