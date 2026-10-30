@@ -18,7 +18,8 @@
 <text x="442" y="291" font-size="21" fill="#365b9b">/ɪˈfemərəl/</text>
 <rect x="442" y="310" width="680" height="4" fill="#365b9b"/>
 <text x="442" y="356" font-size="21" fill="#365b9b">Demo English Dictionary</text>
-<text x="442" y="400" font-size="23"><tspan fill="#c45230" font-style="italic">adjective</tspan><tspan dx="20">lasting for only a short time</tspan></text>
+<text x="442" y="400" font-size="23" fill="#c45230" font-style="italic">adjective</text>
+<text x="578" y="400" font-size="23">lasting for only a short time</text>
 <text x="459" y="442" font-size="21" fill="#365b9b">The garden's ephemeral beauty returns each spring.</text>
 <text x="442" y="504" font-size="21" fill="#365b9b">Demo Bilingual Dictionary</text>
 <text x="442" y="546" font-size="23">短暂的；转瞬即逝的。</text>
