@@ -8,6 +8,6 @@ First public source release, based on the working local Vicinae v0.28.1 extensio
 - Dictionary enable/order configuration and light/dark rich-text adaptation.
 - Selected-text command with retry and pre-focus PRIMARY capture script.
 - Portable installation with isolated helper initialization at the installed path.
-- README illustrations using original demonstration text.
+- English primary README and a separate Chinese translation, with actual application screenshots.
 
 Qt rich-text and Wayland selection limitations are documented in README.
